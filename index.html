@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:967px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="main.min.css">
+	</noscript>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row header-row">
+				<div class="col-md-3 col-sm-4 col-xs-9">
+					<a href="#" class="logo"><img class="img-responsive" src="img/logo.png" height="37" width="265" alt=""></a>
+				</div>
+				<div class="col-md-9 top-menu hidden-xs">
+					<a class="menu-items" href="#price">Pricing and plans</a>
+					<a class="menu-items" href="#tour">Examples</a>
+					<a class="menu-items" href="#who">Who am I?</a>
+					<a class="menu-items" href="#contact">Get in touch</a>
+				</div>
+				<div class="col-sm-7 col-xs-3 mobile-menu hidden-sm hidden-md hidden-lg">
+					<div class="sandwich"><a id="menu-button" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						viewBox="0 0 39.995 25.997" enable-background="new 0 0 39.995 25.997" xml:space="preserve">
+						<image overflow="visible" width="40" height="26" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+						EAMCAwYAAAF/AAABpQAAAfT/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
+						Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
+						JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIABoAKAMBIgACEQEDEQH/
+						xABrAAEBAQAAAAAAAAAAAAAAAAAABgUBAQAAAAAAAAAAAAAAAAAAAAAQAAMBAQAAAAAAAAAAAAAA
+						AAAFFRYgEQABAwUBAAAAAAAAAAAAAAAA0qM0AqLiAzMgEgEAAAAAAAAAAAAAAAAAAAAg/9oADAMB
+						AAIRAxEAAACgAABoJAV6QFekB//aAAgBAgABBQDr/9oACAEDAAEFAOv/2gAIAQEAAQUAyxljLGWM
+						sVnxWfFZ8VnxWfF1UXVRdVF1UXVXX//aAAgBAgIGPwBf/9oACAEDAgY/AF//2gAIAQEBBj8AlN5k
+						pvMlN5kpvMlN5kJrYohNbFEJrYohNbFEJrYo72VpO9laTvZWk72VpO9lafX/2Q==" transform="matrix(0.9999 0 0 0.9999 0 0)">
+					</image>
+				</svg></a></div>
+			</div>
+		</div>
+		<div id="mobile-menu-row">
+			<div class="col-sm-12"><a href="#">Pricing and plans</a></div>
+			<div class="col-sm-12"><a href="#">Examples</a></div>
+			<div class="col-sm-12"><a href="#">Who am I?</a></div>
+			<div class="col-sm-12"><a href="#">Get in touch</a></div>
+		</div>
+	</div>
+	</header>
+	<section class="header-slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h1>Websites for bed & breakfasts, small hotels, inns and lodges.<br><br>We’re the <span>industry specialists.</span> </h1>
+				</div>
+				<div class="col-md-4 circle">
+					<div class="circle-header">
+						<h2>Gill & Steven Taylor </h2>
+						<p>Bushy lodge,<br>Gwithian</p>
+					</div>
+					<img class="people-circle" src="img/people.png" height="100" width="99" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-3steps">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 title-section left"><h2>3 Steps to increase your bookings: <span>The process</span></h2></div>
+				<div class="col-sm-4 col-md-4 step-section-item left">
+					<div style="margin-top: 6px"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="106.001px" height="88.987px" viewBox="0 0 106.001 88.987" enable-background="new 0 0 106.001 88.987"
+						xml:space="preserve">
+						<g>
+							<g>
+								<path fill="#454545" d="M73.011,0H35.673C16.336,0,0,16.337,0,35.675v0.971c0,16.015,11.073,28.807,21.921,33.24V82.59
+								c0,3.846,4.8,6.397,7.977,6.397c1.973,0,4.37-1.507,5.344-2.503l16.254-16.029h21.515c19.115,0,32.99-14.219,32.99-33.81v-0.971
+								C106.001,15.336,91.818,0,73.011,0z M102.299,36.646c0,17.452-12.317,30.119-29.288,30.119H49.974L32.615,83.884
+								c-0.621,0.634-2.12,1.413-2.718,1.413c-1.837,0-4.273-1.543-4.273-2.707V67.309l-1.238-0.435
+								C14.22,63.311,3.703,51.031,3.703,36.646v-0.971c0-17.337,14.641-31.984,31.97-31.984h37.338
+								c16.697,0,29.288,13.751,29.288,31.984V36.646z M34.573,30.206c-3.15,0-5.708,2.547-5.708,5.687c0,3.141,2.558,5.685,5.708,5.685
+								c3.149,0,5.702-2.544,5.702-5.685C40.275,32.753,37.722,30.206,34.573,30.206z M55.108,30.207c-3.15,0-5.706,2.546-5.706,5.688
+								c0,3.14,2.555,5.684,5.706,5.684s5.701-2.544,5.702-5.684C60.811,32.753,58.259,30.207,55.108,30.207z M75.646,30.207
+								c-3.15,0-5.703,2.546-5.703,5.688c0,3.14,2.553,5.684,5.703,5.684c3.147,0,5.705-2.544,5.705-5.684
+								C81.351,32.753,78.793,30.207,75.646,30.207z"/>
+							</g>
+						</g>
+					</svg></div>
+					<h3>Let’s have a chat</h3>
+					<p>Once I understand your business I can walk you through the process and answer any questions you may have. Technology doesn’t have to be hassle, I’m here to help. </p>
+				</div>
+
+
+				<div class="col-sm-4 col-md-4 step-section-item up">
+					<div style="margin-top: 6px"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="168.891px" height="88.904px" viewBox="0 0 168.891 88.904" enable-background="new 0 0 168.891 88.904"
+						xml:space="preserve">
+						<path fill="#454545" d="M112.594,3.783h9.383v3.783h46.914v6.329l-0.4,0.515c-0.852,1.091-20.91,26.279-55.896,27.163v0.041h-1.877
+						c-10,0-14.783,5.73-15.005,18.014l18.758,15.127v14.149H89.137h-3.753H55.359h-3.753H26.272V74.755L45.03,59.628
+						C44.531,28.612,18.403,17.024,1.876,17.024H0V0h112.594V3.783z M112.594,33.67v4.122c30.535-0.836,49.587-21.757,52.544-25.236
+						V11.35h-43.162v15.133h-3.753V15.511V7.566h-5.63V33.67z M89.137,85.121h21.58v-7.566h-21.58V85.121z M55.359,85.121h30.025v-6.866
+						c-1.622-1.835-7.82-8.267-15.013-8.267S56.98,76.42,55.359,78.255V85.121z M30.025,85.121h21.581v-7.566H30.025V85.121z
+						M108.841,3.783H3.753v9.501c16.341,0.764,39.693,11.448,44.242,37.788h10.179v3.783h-9.663c0.12,1.229,0.191,2.493,0.232,3.783
+						h5.677v3.783h-6.848l-14.074,11.35H54.42v0.014c3.123-3.016,8.995-7.58,15.951-7.58c6.957,0,12.829,4.564,15.951,7.58v-0.014h20.922
+						L91.952,61.438V60.53c0-17.404,8.784-22.052,16.89-22.632V3.783z"/>
+					</svg></div>
+					<h3>Design & build</h3>
+					<p>Once you’re happy I can start designing your site. I’ve got lots of experience so rest assured you’re in safe hands. I’ll keep you involved as we go through the process.</p>
+				</div>
+
+
+				<div class="col-sm-4 col-md-4 step-section-item right">
+					<div><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="169.98px" height="94.995px" viewBox="0 0 169.98 94.995" enable-background="new 0 0 169.98 94.995" xml:space="preserve">
+						<g>
+							<g>
+								<path fill="#454545" d="M127.032,47.076h-2.33V11.167c0-0.807-0.09-1.592-0.252-2.35c-0.326-1.266-0.282-1.156-0.686-2.121
+								C122.043,2.76,118.127,0,113.575,0H11.125C4.991,0,0,5.01,0,11.167v53.177C0,70.5,4.991,75.51,11.125,75.51h40.534
+								c-0.185,8.568-2.296,14.104-6.491,16.814c-0.538,0.348-0.784,1.012-0.604,1.629s0.745,1.041,1.387,1.041h32.8
+								c0.642,0,1.206-0.424,1.387-1.041s-0.065-1.281-0.604-1.631c-4.195-2.709-6.309-8.244-6.494-16.813h29.475v14.455
+								c0,2.773,2.247,5.029,5.01,5.029h19.508c2.763,0,5.011-2.256,5.011-5.029v-37.86C132.043,49.332,129.795,47.076,127.032,47.076z
+								M11.125,2.901h102.45c2.858,0,5.376,1.472,6.854,3.695C82.755,6.644,18.22,6.702,4.255,6.631
+								C5.729,4.389,8.255,2.901,11.125,2.901z M74.927,92.092h-25.15c3.066-3.605,4.628-9.1,4.781-16.582h15.585
+								C70.296,82.992,71.858,88.486,74.927,92.092z M102.515,72.609h-91.39c-4.54,0-8.234-3.708-8.234-8.266v-4.243
+								c3.391,0.123,11.74,0.172,32.882,0.172c14.939,0,36.284-0.023,66.742-0.063V72.609z M102.515,52.104v5.201
+								c-39.131,0.043-90.671,0.075-99.624,0.004V11.167c0-0.6,0.072-1.183,0.193-1.746c3.512,0.118,11.934,0.165,32.611,0.165
+								c17.887,0,44.972-0.036,85.946-0.087c0.111,0.539,0.17,1.098,0.17,1.669v35.909h-14.287
+								C104.762,47.076,102.515,49.332,102.515,52.104z M129.151,89.965c0,1.174-0.95,2.127-2.119,2.127h-19.508
+								c-1.169,0-2.119-0.953-2.119-2.127v-7.092h23.746V89.965z M129.151,79.973h-23.746V55.77h23.746V79.973z M129.151,52.868h-23.746
+								v-0.764c0-1.173,0.95-2.127,2.119-2.127h19.508c1.169,0,2.119,0.954,2.119,2.127V52.868z M62.35,70.093
+								c2.336,0,4.235-1.906,4.235-4.25c0-2.343-1.899-4.248-4.235-4.248c-2.333,0-4.232,1.905-4.232,4.248
+								C58.117,68.187,60.017,70.093,62.35,70.093z M62.35,64.496c0.742,0,1.345,0.604,1.345,1.347c0,0.744-0.603,1.349-1.345,1.349
+								c-0.739,0-1.342-0.604-1.342-1.349C61.008,65.101,61.61,64.496,62.35,64.496z M117.277,89.863c1.754,0,3.183-1.434,3.183-3.195
+								s-1.429-3.193-3.183-3.193s-3.183,1.432-3.183,3.193S115.523,89.863,117.277,89.863z M117.277,86.375
+								c0.16,0,0.292,0.133,0.292,0.293c0,0.322-0.584,0.322-0.584,0C116.985,86.508,117.118,86.375,117.277,86.375z M137.471,28.06
+								c-2.616,0-4.743,2.134-4.743,4.759s2.127,4.761,4.743,4.761s4.743-2.136,4.743-4.761S140.087,28.06,137.471,28.06z
+								M137.471,34.679c-1.022,0-1.852-0.834-1.852-1.859c0-1.024,0.829-1.857,1.852-1.857s1.852,0.833,1.852,1.857
+								C139.322,33.844,138.493,34.679,137.471,34.679z M134.174,16.94c-0.799,0-1.446,0.649-1.446,1.45c0,0.802,0.647,1.451,1.446,1.451
+								c8.947,0,16.228,7.307,16.228,16.287c0,0.801,0.646,1.451,1.445,1.451c0.798,0,1.445-0.65,1.445-1.451
+								C153.292,25.549,144.715,16.94,134.174,16.94z M134.174,8.815c-0.799,0-1.446,0.649-1.446,1.451s0.647,1.451,1.446,1.451
+								c13.411,0,24.322,10.951,24.322,24.412c0,0.801,0.646,1.451,1.445,1.451c0.798,0,1.445-0.65,1.445-1.451
+								C161.387,21.069,149.18,8.815,134.174,8.815z M134.174,0.189c-0.799,0-1.446,0.65-1.446,1.451c0,0.801,0.647,1.451,1.446,1.451
+								c18.148,0,32.916,14.821,32.916,33.038c0,0.801,0.647,1.451,1.445,1.451s1.445-0.65,1.445-1.451
+								C169.98,16.313,153.917,0.189,134.174,0.189z"/>
+							</g>
+						</g>
+					</svg></div>
+					<h3>Test, launch & analytics</h3>
+					<p>Your site is built and tested. It’ll work on all devices so people can use it from their phones, tablets and laptops. I’ll also show you the analytics for your site! </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-who" id="who">
+		<div class="container">
+			<div class="row">
+				<div class="left col-md-3 col-sm-4 col-xs-12 img-wrapper"><p><img src="img/dan.png" height="235" width="234" alt="" class="img-responsive"></p></div>
+				<div class="col-md-9 col-sm-8 col-xs-12 right">
+					<h3>Who am I?</h3>
+					<p>I’m Dan and I’ve been designing and building websites for over 10 years.</p>
+					<p>A while ago my wife and I went to a B&B in the Lake District, the lovely owner was having a nightmare with a generic website builder. While in the bar one evening I helped her out and it got me thinking, why not help others.</p>
+					<p>So I started Booking Heros. After all I bloody love holidays!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-price" id="price">
+		<div class="container">
+			<div class="row up">
+				<div class="col-md-12 title-section"><h2>What do you get: <span>Packages and Prices</span></h2></div>
+				<div class="col-md-12"><h3>Our pricing plans simple, and with all the features you need</h3></div>
+			</div>
+			<div class="row">
+			<!-- First price item -->
+				<div class="col-md-6 col-sm-6 col-xs-12 price-item left">
+					<div class="row">
+						<div class="col-md-4  col-sm-12 col-xs-12">
+							<p class="price-secondary">Setup cost</p>
+							<p class="price-main">£599</p>
+						</div>
+						<div class="col-md-8 col-sm-12 col-xs-12">
+							<p class="price-secondary secondary-second">Then</p>
+							<p class="price-main">£59<span>a month</span></p>
+						</div>
+					</div>
+					<div class="row">
+						<p class="col-md-12 price-features-title">Basic package</p>
+						<ul class="features-desc">
+							<li class="bold-font bold-font-first">- Unlimited updates and ongoing work</li>
+							<ul class="price-in-list price-first-list">
+								<li>New pages, updated photos and reviews</li>
+							</ul>
+							<li class="bold-font bold-font-first">- Responsive web design</li>
+							<ul class="price-in-list price-first-list">
+								<li>Works on all devices - phones, tablets and laptops</li>
+								<li>Stunning design and user experience </li>
+								<li>Optimised for B&B’s and rental properties</li>
+								<li>Coded for Search Engine Optimisation</li>
+							</ul>
+							<li class="bold-font bold-font-first">- Booking system</li>
+							<ul class="price-in-list price-first-list">
+								<li>Take credit and debit card payments</li>
+								<li>Optimised for conversions</li>
+								<li>Flexible rates system</li>
+							</ul>
+							<li class="bold-font bold-font-first">- Channel manager all your external listing in one place</li>
+							<ul class="price-in-list price-first-list">
+								<li>AirBnB / 9Flats / Roomarama integration</li>
+							</ul>
+							<li class="bold-font bold-font-first">- Reservation manager</li>
+							<ul class="price-in-list price-first-list">
+								<li>Manage all of your reservations on a centralised calendar</li>
+								<li>Detailed guest profile</li>
+							</ul>
+							<li class="bold-font bold-font-first">- Complete support, maintenance and hosting</li>
+							<ul class="price-in-list price-first-list">
+								<li>Technical support whenever you need it</li>
+								<li>Unlimited and reliable hosting</li>
+								<li>Social media integration</li>
+								<li>Integrated reviews</li>
+							</ul>
+							<li class="bold-font bold-font-first">- Blog and setup support</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row hidden-md hidden-lg hidden-sm" style="margin-bottom: 50px">
+					<div class="col-md-12 tac">
+						<button class="button-price-first" href="#">See more of the features</button>
+					</div>
+				</div>
+
+
+
+				<!-- Second price item -->
+				<div class="col-md-6 col-sm-6 col-xs-12 price-item price-item-second right">
+					<div class="row">
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<p class="price-secondary">Setup cost</p>
+							<p class="price-main">£599</p>
+						</div>
+						<div class="col-md-8 col-sm-12 col-xs-12">
+							<p class="price-secondary secondary-second">Then</p>
+							<p class="price-main">£99<span>a month</span></p>
+						</div>
+					</div>
+					<div class="row">
+						<p class="col-md-12 price-features-title">Premium package</p>
+						<ul class="features-desc">
+							<li class="bold-font bold-font-second">- Unlimited updates and ongoing work</li>
+							<ul class="price-in-list price-secont-list">
+								<li>New pages, updated photos and reviews</li>
+							</ul>
+							<li class="bold-font bold-font-second">- Responsive web design</li>
+							<ul class="price-in-list price-secont-list">
+								<li>Works on all devices - phones, tablets and laptops</li>
+								<li>Stunning design and user experience </li>
+								<li>Optimised for B&B’s and rental properties</li>
+								<li>Coded for Search Engine Optimisation</li>
+							</ul>
+							<li class="bold-font bold-font-second">- Booking system</li>
+							<ul class="price-in-list price-secont-list">
+								<li>Take credit and debit card payments</li>
+								<li>Optimised for conversions</li>
+								<li>Flexible rates system</li>
+							</ul>
+							<li class="bold-font bold-font-second">- Channel manager all your external listing in one place</li>
+							<ul class="price-in-list price-secont-list">
+								<li>AirBnB / 9Flats / Roomarama integration</li>
+							</ul>
+							<li class="bold-font bold-font-second">- Reservation manager</li>
+							<ul class="price-in-list price-secont-list">
+								<li>Manage all of your reservations on a centralised calendar</li>
+								<li>Detailed guest profile</li>
+							</ul>
+							<li class="bold-font bold-font-second">- Complete support, maintenance and hosting</li>
+							<ul class="price-in-list price-secont-list">
+								<li>Technical support whenever you need it</li>
+								<li>Unlimited and reliable hosting</li>
+								<li>Social media integration</li>
+								<li>Integrated reviews</li>
+							</ul>
+							<li class="bold-font bold-font-second">- Blog and setup support</li>
+							<ul class="price-in-list price-secont-list">
+								<li>Live blog and setup support</li>
+							</ul>
+							<li class="special-offer">+ Email marketing/Mailchimp setup</li>
+							<ul class="price-in-list price-secont-list">
+								<li>Help building your montly email subscribers list</li>
+							</ul>
+							<li class="special-offer">+ Marketing and SEO management</li>
+							<ul class="price-in-list price-secont-list">
+								<li>Montly SEO and analytics reports</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row hidden-md hidden-sm hidden-lg" style="margin-bottom: 50px">
+				<div class="col-md-12 tac">
+					<button class="button-price-second" href="#">See more of the features</button>
+				</div>
+			</div>
+			<div class="row hidden-xs right" style="margin-bottom: 50px">
+				<div class="col-md-12 tac">
+					<button class="button-price" href="#">See more of the features</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-tour" id="tour">
+		<div class="container">
+			<div class="row">
+				<div class="left col-md-3 col-sm-4 col-xs-12 img-wrapper tac"><img src="img/demo_site.png" height="406" width="260" alt="" class="img-responsive"></div>
+				<div class="right col-md-9 col-sm-8 col-xs-12">
+					<h3>Who am I?</h3>
+					<p>I’m Dan and I’ve been designing and building websites for over 10 years.</p>
+					<p>A while ago my wife and I went to a B&B in the Lake District, the lovely owner was having a nightmare with a generic website builder. While in the bar one evening I helped her out and it got me thinking, why not help others.</p>
+					<p>So I started Booking Heros. After all I bloody love holidays!</p>
+				</div>
+				<a href="#">See our demo site!</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class=" left col-md-9 contact-desc">
+					<row>
+					<h3 class="col-md-12">Get in touch</h3>
+						<p class="col-md-9">The advantage of me being a human not a faceless websit builder is you can talk to me, you can explain your business in your words. I’m not making website for various industry sectors, I’m making websites for you. I specialise in Bed & breakfasts,  small hotels, inns and lodges.</p>
+						<div class="col-md-3"> </div>
+						<p class="col-md-12">So give me a ring and get back to doing what you do best...</p>
+						<form class="contact-form col-md-12" action="#">
+							<input class="input-normal"type="text" placeholder="Your name" name="name">
+							<input class="input-normal"type="text" placeholder="Your bussines name" name="bussines-name">
+							<input class="input-normal"type="text" placeholder="What’s your mobile number?" name="number">
+							<textarea class="input-desc" type="text" placeholder="Would you like to tell me about about your business? (optional)" name="bussines-desc"></textarea>
+							<input type="submit" value="I’ll be in touch shortly!">
+						</form>
+					</row>
+				</div>
+				<div class="col-md-3 right">
+					<div class="circle-contact tac">
+						<h3>Dan was brilliant.</h3>
+						<p>We explained what we were after, he walked us through the process and a week later we were recieving bookings through our email. Highly recommended.</p>
+					</div>
+					<div class="circle-conctact-second tac">
+						<h3>Steven Taylor</h3>
+						<p>Bushy lodge</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-logo col-md-3 col-sm-12"><p><img src="img/logo-down.png" height="24" width="177" alt=""></p></div>
+				<div class="col-md-9 footer-links col-sm-12">
+					<a href="#">Footer links</a>
+					<a href="#">Footer links</a>
+					<a href="#">Footer links</a>
+					<a href="#">Footer links</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+<!-- Load CSS -->
+<script>
+
+	//Load Libs CSS
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="libs/animate/animate.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	//User Styles + Media Queries
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="main.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+</script>
+
+<!-- Load Scripts -->
+<script>var scr = {"scripts":[
+	{"src" : "libs/modernizr/modernizr.js", "async" : false},
+	{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+	{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
+	{"src" : "libs/animate/animate-css.js", "async" : false},
+	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+	{"src" : "js/common.js", "async" : false}
+	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+</script>
+
+</body>
+</html>
